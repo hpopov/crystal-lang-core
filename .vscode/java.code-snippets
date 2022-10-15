@@ -1,0 +1,19 @@
+{
+	"Singletone (anti)pattern": {
+		"scope": "java",
+		"prefix": "instance",
+		"body": [
+			"private static final ${1:$TM_FILENAME_BASE} INSTANCE = new ${1:$TM_FILENAME_BASE}();",
+			"",
+			"public static final ${1:$TM_FILENAME_BASE} instance() {",
+			"\treturn INSTANCE;",
+			"}",
+			"",
+			"private ${1:$TM_FILENAME_BASE}() {",
+			"\t$2",
+			"}"
+
+		],
+		"description": "Create INSTANCE and getInstance() for Singletone"
+	}
+}

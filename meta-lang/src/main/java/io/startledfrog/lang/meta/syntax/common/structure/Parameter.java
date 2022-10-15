@@ -1,5 +1,6 @@
 package io.startledfrog.lang.meta.syntax.common.structure;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * </a>
  */
 @Data
+@AllArgsConstructor
 public class Parameter {
 
     private String name;

@@ -1,5 +1,6 @@
 package io.startledfrog.lang.meta.syntax.classifiers.simple;
 
+import io.startledfrog.lang.meta.syntax.common.structure.Package;
 import io.startledfrog.lang.meta.syntax.common.structure.Type;
 
 /**
@@ -9,4 +10,7 @@ import io.startledfrog.lang.meta.syntax.common.structure.Type;
  */
 public class PrimitiveType extends Type {
     
+    public PrimitiveType(Package parentPackage, String name) {
+        super(parentPackage, name);
+    }
 }

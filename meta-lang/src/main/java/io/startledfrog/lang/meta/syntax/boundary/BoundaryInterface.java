@@ -4,6 +4,7 @@ import java.util.List;
 
 import io.startledfrog.lang.meta.syntax.common.structure.Classifier;
 import io.startledfrog.lang.meta.syntax.common.structure.Package;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -13,6 +14,7 @@ import lombok.Setter;
  * Collection of {@link BoundaryFeature}s, which will be translated into executible-language specific procedures/elements
  */
 @Data
+@AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class BoundaryInterface extends Classifier {
 
