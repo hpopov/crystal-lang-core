@@ -8,5 +8,4 @@
  */
 
 rootProject.name = 'startled-frog-lang-core'
-include('meta-lang')
-include('lang')
+include 'meta-lang', 'lang'
