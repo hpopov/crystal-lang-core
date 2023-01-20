@@ -3,7 +3,6 @@ package io.startledfrog.lang.meta.syntax.common.behavior;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.startledfrog.lang.meta.syntax.common.behavior.parameter.ParameterMapping;
 import io.startledfrog.lang.meta.syntax.common.structure.Operation;
 import io.startledfrog.lang.meta.syntax.common.structure.Parameter;
 import lombok.AllArgsConstructor;

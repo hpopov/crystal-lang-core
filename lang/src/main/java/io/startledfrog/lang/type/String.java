@@ -12,6 +12,6 @@ public class String extends PrimitiveType {
     }
 
     private String() {
-        super(Lang.instance(), "String");
+        super(Lang.instance().getIdentifier(), "String");
     }
 }

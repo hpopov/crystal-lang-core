@@ -3,7 +3,7 @@ package io.startledfrog.lang.meta.syntax.boundary;
 import java.util.List;
 
 import io.startledfrog.lang.meta.syntax.common.structure.AbstractPackageableElement;
-import io.startledfrog.lang.meta.syntax.common.structure.Package;
+import io.startledfrog.lang.meta.syntax.common.structure.PackageIdentifier;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,8 +15,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class BoundaryInterface extends AbstractPackageableElement {
 
-    public BoundaryInterface(Package parentPackage, String name, List<BoundaryOperation> features) {
-        super(parentPackage, name);
+    public BoundaryInterface(PackageIdentifier parentPackageIdentifier, String name, List<BoundaryOperation> features) {
+        super(parentPackageIdentifier, name);
         this.features = features;
     }
 

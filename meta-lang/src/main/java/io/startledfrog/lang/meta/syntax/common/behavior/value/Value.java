@@ -10,4 +10,8 @@ import io.startledfrog.lang.meta.syntax.common.structure.Type;
 public abstract class Value {
 
     public abstract Type getType();
+
+    public boolean isAssignableTo(Type type) {
+        return getType().equals(type);
+    }
 }

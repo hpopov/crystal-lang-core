@@ -7,8 +7,8 @@ package io.startledfrog.lang.meta.syntax.common.structure;
  */
 public abstract class Classifier extends Type {
 
-    public Classifier(Package parentPackage, String name) {
-        super(parentPackage, name);
+    public Classifier(PackageIdentifier parentPackageIdentifier, String name) {
+        super(parentPackageIdentifier, name);
     }
 
     public abstract Iterable<? extends Feature> getFeatures();

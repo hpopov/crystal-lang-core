@@ -3,6 +3,7 @@ package io.startledfrog.lang.packages;
 import java.util.List;
 
 import io.startledfrog.lang.meta.syntax.common.structure.Package;
+import io.startledfrog.lang.meta.syntax.common.structure.PackageIdentifier;
 
 public class Lang extends Package {
 
@@ -13,6 +14,6 @@ public class Lang extends Package {
     }
 
     private Lang() {
-        super("startledfrog.lang", List.of(), List.of());
+        super(PackageIdentifier.ofUri("startledfrog.lang"), List.of(), List.of());
     }
 }

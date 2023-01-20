@@ -8,7 +8,7 @@ package io.startledfrog.lang.meta.syntax.common.structure;
  */
 public abstract class Type extends AbstractPackageableElement {
 
-    public Type(Package parentPackage, String name) {
-        super(parentPackage, name);
+    public Type(PackageIdentifier parentPackageIdentifier, String name) {
+        super(parentPackageIdentifier, name);
     }
 }

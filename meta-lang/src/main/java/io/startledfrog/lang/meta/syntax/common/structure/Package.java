@@ -5,11 +5,11 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-
 @Data
 @AllArgsConstructor
 public class Package {
-    private String Uri;
+
+    private PackageIdentifier identifier;
     private List<Package> nestedPackages;
     private List<Packagable> nestedElements;
 }

@@ -15,7 +15,7 @@ public abstract class AbstractPackageableElement implements Packagable {
 
     @Getter(onMethod = @__(@Override))
     @Setter(onMethod = @__(@Override))
-    private Package parentPackage;
+    private PackageIdentifier parentPackageIdentifier;
 
     private String name;
 }

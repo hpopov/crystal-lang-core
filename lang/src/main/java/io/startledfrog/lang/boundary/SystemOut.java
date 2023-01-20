@@ -15,6 +15,6 @@ public final class SystemOut extends BoundaryInterface {
     }
 
     private SystemOut() {
-        super(Lang.instance(), "SystemOut", List.of(PrintLineFeature.instance()));
+        super(Lang.instance().getIdentifier(), "SystemOut", List.of(PrintLineFeature.instance()));
     }
 }
