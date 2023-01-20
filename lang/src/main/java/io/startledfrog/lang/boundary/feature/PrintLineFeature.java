@@ -2,11 +2,11 @@ package io.startledfrog.lang.boundary.feature;
 
 import java.util.List;
 
-import io.startledfrog.lang.meta.syntax.boundary.BoundaryFeature;
+import io.startledfrog.lang.meta.syntax.boundary.BoundaryOperation;
 import io.startledfrog.lang.meta.syntax.common.structure.Parameter;
 import io.startledfrog.lang.type.String;
 
-public class PrintLineFeature extends BoundaryFeature {
+public class PrintLineFeature extends BoundaryOperation {
 
     private static final PrintLineFeature INSTANCE = new PrintLineFeature();
 
@@ -21,7 +21,7 @@ public class PrintLineFeature extends BoundaryFeature {
     private static class LineParameter extends Parameter {
 
         public LineParameter() {
-            super("line", String.instance(), PrintLineFeature.INSTANCE);
+            super("line", String.instance());
         }
     }
 }

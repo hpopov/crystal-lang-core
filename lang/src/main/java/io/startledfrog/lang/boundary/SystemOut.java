@@ -6,15 +6,15 @@ import io.startledfrog.lang.boundary.feature.PrintLineFeature;
 import io.startledfrog.lang.meta.syntax.boundary.BoundaryInterface;
 import io.startledfrog.lang.packages.Lang;
 
-public final class System extends BoundaryInterface {
+public final class SystemOut extends BoundaryInterface {
 
-    private static final System INSTANCE = new System();
-    
-    public static final System instance() {
+    private static final SystemOut INSTANCE = new SystemOut();
+
+    public static final SystemOut instance() {
         return INSTANCE;
     }
 
-    private System() {
-        super(Lang.instance(), List.of(PrintLineFeature.instance()));
+    private SystemOut() {
+        super(Lang.instance(), "SystemOut", List.of(PrintLineFeature.instance()));
     }
 }
