@@ -9,6 +9,12 @@ import io.startledfrog.lang.meta.syntax.common.structure.PackageIdentifier;
 import io.startledfrog.lang.meta.syntax.common.structure.Parameter;
 import io.startledfrog.lang.meta.syntax.common.structure.Type;
 
+/**
+ * A utility class to instantiate abstract classes of <i>Domain
+ * Entities</i>.</br>
+ * </br>
+ * Should only be used for testing purposes.
+ */
 public class DomainStubs {
 
     /**
