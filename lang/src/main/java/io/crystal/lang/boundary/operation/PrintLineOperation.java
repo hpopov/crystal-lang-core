@@ -1,4 +1,4 @@
-package io.crystal.lang.boundary.feature;
+package io.crystal.lang.boundary.operation;
 
 import java.util.List;
 
@@ -6,15 +6,15 @@ import io.crystal.lang.meta.syntax.boundary.BoundaryOperation;
 import io.crystal.lang.meta.syntax.common.structure.Parameter;
 import io.crystal.lang.type.String;
 
-public class PrintLineFeature extends BoundaryOperation {
+public class PrintLineOperation extends BoundaryOperation {
 
-    private static final PrintLineFeature INSTANCE = new PrintLineFeature();
+    private static final PrintLineOperation INSTANCE = new PrintLineOperation();
 
-    public static final PrintLineFeature instance() {
+    public static final PrintLineOperation instance() {
         return INSTANCE;
     }
 
-    private PrintLineFeature() {
+    private PrintLineOperation() {
         super("printLine", List.of(new LineParameter()));
     }
 
