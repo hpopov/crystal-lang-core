@@ -13,9 +13,9 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class BoundaryInstance extends AbstractPackageableElement {
+public class BoundaryObject extends AbstractPackageableElement {
 
-    public BoundaryInstance(PackageIdentifier parentPackageIdentifier, String name, List<BoundaryOperation> features) {
+    public BoundaryObject(PackageIdentifier parentPackageIdentifier, String name, List<BoundaryOperation> features) {
         super(parentPackageIdentifier, name);
         this.features = features;
     }
